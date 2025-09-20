@@ -1,8 +1,8 @@
 #include"function.h"
 
-void file_read()
+void file_read(char* filename)
 {
-    FILE *f_read = fopen("text_files/sample.txt", "r");
+    FILE *f_read = fopen(filename, "r");
     if(f_read == NULL)
     {
         printf("Error in opening file.\n");
