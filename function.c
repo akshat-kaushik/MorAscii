@@ -72,7 +72,7 @@ void morse_code(char** morseChar)
         dot;printf(".");
         dot;printf(".");
         dash;printf("_");
-        dash;printf("_ ");
+        dash;printf(". ");
         Sleep(300);
     }
     else if(**morseChar == 'G' || **morseChar == 'g')
@@ -115,6 +115,7 @@ void morse_code(char** morseChar)
     {
         dot;printf(".");
         dash;printf("_");
+        dot;printf(".");
         dot;printf(". ");
         Sleep(300);
     }
@@ -218,4 +219,91 @@ void morse_code(char** morseChar)
         dot;printf(". ");
         Sleep(300);
     }
+}
+
+void morse_read()
+{
+    int count = 0;
+    char morsecode[MAX];// = "... ___ ...";
+    printf("\t\t\tEnter Morse Code\n");
+
+    fgets(morsecode, MAX-1, stdin);
+    while(morsecode[count] != '\0')
+    {
+        count++;
+    }
+    morsecode[count] = ' ';
+
+    int i = 0;
+    while(morsecode[i] != '\0')
+    {
+        if(morsecode[i] == ' ')
+        {
+            dot_dashchecker(' ');
+            i++;
+            continue;
+        }
+        else if(morsecode[i] == '|')
+        {
+            printf(" ");
+            i++;
+            continue;
+        }
+        char dotdash = morsecode[i];
+        dot_dashchecker(dotdash);
+        i++;
+    }
+}
+
+void dot_dashchecker(char mCode)
+{
+    static int k = 0;
+    static char morseArray[10];
+    if(mCode == '.')
+    {
+        morseArray[k] = '.';
+        k++;
+    }
+    else if(mCode == '_')
+    {
+        morseArray[k] = '_';
+        k++;
+    }
+    else if(mCode == ' ')
+    {
+        morseArray[k] = '\0';
+        morse_to_text(morseArray);
+        k = 0;
+    }
+}
+
+void morse_to_text(char* textChar)
+{
+    if(strcmp(textChar, "._") == 0) { printf("A"); }
+    else if(strcmp(textChar, "_...") == 0) { printf("B"); }
+    else if(strcmp(textChar, "_._.") == 0) { printf("C"); }
+    else if(strcmp(textChar, "_..") == 0) { printf("D"); }
+    else if(strcmp(textChar, ".") == 0) { printf("E"); }
+    else if(strcmp(textChar, "..__") == 0) { printf("F"); }
+    else if(strcmp(textChar, "__.") == 0) { printf("G"); }
+    else if(strcmp(textChar, "....") == 0) { printf("H"); }
+    else if(strcmp(textChar, "..") == 0) { printf("I"); }
+    else if(strcmp(textChar, ".___") == 0) { printf("J"); }
+    else if(strcmp(textChar, "_._") == 0) { printf("K"); }
+    else if(strcmp(textChar, "._..") == 0) { printf("L"); }
+    else if(strcmp(textChar, "__") == 0) { printf("M"); }
+    else if(strcmp(textChar, "_.") == 0) { printf("N"); }
+    else if(strcmp(textChar, "___") == 0) { printf("O"); }
+    else if(strcmp(textChar, ".__.") == 0) { printf("P"); }
+    else if(strcmp(textChar, "__._") == 0) { printf("Q"); }
+    else if(strcmp(textChar, "._.") == 0) { printf("R"); }
+    else if(strcmp(textChar, "...") == 0) { printf("S"); }
+    else if(strcmp(textChar, "_") == 0) { printf("T"); }
+    else if(strcmp(textChar, ".._") == 0) { printf("U"); }
+    else if(strcmp(textChar, "..._") == 0) { printf("V"); }
+    else if(strcmp(textChar, ".__") == 0) { printf("W"); }
+    else if(strcmp(textChar, "_.._") == 0) { printf("X"); }
+    else if(strcmp(textChar, "_.__") == 0) { printf("Y"); }
+    else if(strcmp(textChar, "__..") == 0) { printf("Z"); }
+    else { printf("#"); } 
 }

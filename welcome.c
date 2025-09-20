@@ -39,6 +39,7 @@ void welcome()
     printf("*     **                                        *     **      **               *****       ***     ***  \n");
     printf("*                                               *                                                       \n");
     printf(" **                                              **                                                     \n");
+    
     int i = 0;
     while(i<50)
     {
@@ -46,4 +47,7 @@ void welcome()
         system("color 06");
         i++;
     }
+
+    printf("\t\t\t Press '0' for Text to Morse Code\n");
+    printf("\t\t\t Press '1' for Morse Code to Text\n");
 }
