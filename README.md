@@ -129,7 +129,7 @@ Contributions are always welcome and appreciated! feel free to contribute
 
 ## License
 
-This project is licensed under the 
+This project is licensed under the [MIT License](https://github.com/akshat-kaushik/MorAscii/blob/main/LICENSE)
 
 ## Author
 
