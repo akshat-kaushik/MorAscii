@@ -26,7 +26,7 @@ void char_checker(char* character)
     }
     else
     {
-        printf("  ");
+        printf("| ");
         Sleep(1000);
     }
 }
@@ -224,10 +224,11 @@ void morse_code(char** morseChar)
 void morse_read()
 {
     int count = 0;
-    char morsecode[MAX];// = "... ___ ...";
+    char morsecode[MAX];// = ".... . ._.. ._.. ___ | .... ___ .__ | ._ ._. . | _.__ ___ .._ | .. | ._ __ | .._. .. _. . | _ .... ._ _. _._ _.__ ___ .._ ";
     printf("\t\t\tEnter Morse Code\n");
 
     fgets(morsecode, MAX-1, stdin);
+  
     while(morsecode[count] != '\0')
     {
         count++;
@@ -284,7 +285,7 @@ void morse_to_text(char* textChar)
     else if(strcmp(textChar, "_._.") == 0) { printf("C"); }
     else if(strcmp(textChar, "_..") == 0) { printf("D"); }
     else if(strcmp(textChar, ".") == 0) { printf("E"); }
-    else if(strcmp(textChar, "..__") == 0) { printf("F"); }
+    else if(strcmp(textChar, ".._.") == 0) { printf("F"); }
     else if(strcmp(textChar, "__.") == 0) { printf("G"); }
     else if(strcmp(textChar, "....") == 0) { printf("H"); }
     else if(strcmp(textChar, "..") == 0) { printf("I"); }
@@ -305,5 +306,4 @@ void morse_to_text(char* textChar)
     else if(strcmp(textChar, "_.._") == 0) { printf("X"); }
     else if(strcmp(textChar, "_.__") == 0) { printf("Y"); }
     else if(strcmp(textChar, "__..") == 0) { printf("Z"); }
-    else { printf("#"); } 
 }
