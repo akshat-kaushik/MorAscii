@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include "function.h"
-#include "welcome.h"
+#include "utils/function.h"
+#include "UI-UX/welcome.h"
 
 int main()
 {

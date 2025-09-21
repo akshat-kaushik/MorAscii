@@ -234,7 +234,9 @@ void morse_read()
         count++;
     }
     morsecode[count] = ' ';
-
+    
+    printf("\n\n\n\nText:\n");
+    
     int i = 0;
     while(morsecode[i] != '\0')
     {
