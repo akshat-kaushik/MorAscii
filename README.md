@@ -129,7 +129,7 @@ Contributions are always welcome and appreciated! feel free to contribute
 
 ## License
 
-This project is licensed under the [MIT License](https://github.com/akshat-kaushik/MorAscii/blob/main/LICENSE)
+This project is licensed under the [MIT License](LICENSE)
 
 ## Author
 
@@ -137,5 +137,5 @@ Akshat Kaushik
 
 ### Alive At
 
-- GitHub: 
-- X: 
+- GitHub: [@akshat-kaushik](https://github.com/akshat-kaushik)
+- X: [@X](https://x.com/kaushk_akshat)
