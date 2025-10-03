@@ -8,7 +8,7 @@ Link : https://github.com/akshat-kaushik/MorAscii.git
 
 ## What do you mean by MorAscii injected into ESP32 ?
 
-MorAscii is now avaible in ESP32 to increase it's functionality in the **hardware sector**, with the help of ESP32 microcontroller board we can extent it **Communication bordiers** like with this V2 version it can communicate through **LED** (Built-in ESP32), for now it only supports Text-to-Morse Code convertion.
+MorAscii is now avaible in ESP32 to increase it's functionality in the **hardware sector**, with the help of ESP32 microcontroller board we can extent it **Communication boundaries** like with this V2 version it can communicate through **LED** (Built-in ESP32), for now it only supports Text-to-Morse Code convertion.
 
 ## Project Structure
 
