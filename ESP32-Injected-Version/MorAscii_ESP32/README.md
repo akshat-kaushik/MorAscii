@@ -49,7 +49,11 @@ ESP32-Injected-Version/
 
 ## Sample Output
 
-Text-to-Morse Code
+Text-to-Morse Code 
+
+**Hello World**
+
+
 ```
 . . . .    .    . _ . .    . _ . .    _ _ _    |  . _ _    _ _ _    . _ .    . _ . .    _ . .
 ```
@@ -60,7 +64,6 @@ Text-to-Morse Code
 - Add Morse Code-to-Text Convertion
 - Add Sound Communication
 - Add 0-9 and Special Charaters
-- Add a interactive GUI and a menu instead of numeric inputs
 
 ## Author
 
